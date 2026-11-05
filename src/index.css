@@ -1,0 +1,79 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-serif: 'Cormorant Garamond', Georgia, serif;
+    --font-cinzel: 'Cinzel', serif;
+    --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    background-color: #0f0a0d;
+    color: #f3ebe6;
+    overflow-x: hidden;
+  }
+}
+
+.font-serif {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+}
+
+.font-cinzel {
+  font-family: 'Cinzel', serif;
+}
+
+.font-sans {
+  font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+}
+
+/* Custom wine scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #140d11;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #3d1c24;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #632332;
+}
+
+/* Glassmorphism wine cards */
+.wine-glass-card {
+  background: linear-gradient(135deg, rgba(38, 20, 27, 0.75) 0%, rgba(20, 11, 15, 0.85) 100%);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(212, 175, 55, 0.15);
+}
+
+.wine-glass-card:hover {
+  border-color: rgba(212, 175, 55, 0.35);
+}
+
+.wine-gold-glow {
+  box-shadow: 0 0 25px rgba(212, 175, 55, 0.2);
+}
+
+.wine-red-glow {
+  box-shadow: 0 0 30px rgba(138, 28, 47, 0.3);
+}
+
+/* Metallic gold text gradient */
+.text-gold-gradient {
+  background: linear-gradient(135deg, #f7e1a0 0%, #d4af37 50%, #aa820a 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-rose-gradient {
+  background: linear-gradient(135deg, #f9c2cf 0%, #e06c88 50%, #9e2a4b 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

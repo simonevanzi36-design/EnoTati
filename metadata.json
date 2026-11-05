@@ -1,0 +1,6 @@
+{
+  "name": "DiVino in Due | Wine Journal & Cantinetta 3D",
+  "description": "L'app elegante per catalogare le degustazioni di coppia, archiviare le bottiglie nell'armadio 3D, gestire la cantina e riconoscere etichette con l'AI.",
+  "requestFramePermissions": ["camera"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
